@@ -6,7 +6,7 @@ app.use(express.json());
 
 // accepting the get request route as a middleware
 app.use("/api/user", require("./routes/user"));
-
+app.use("/api/post", require("./routes/post"));
 
 app.listen(3000, () => {
     console.log('Express server listening on port 3000');

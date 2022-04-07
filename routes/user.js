@@ -1,5 +1,5 @@
 const router = require("express").Router();
-
+// Using Prisma Client to send queries to your database
 const { PrismaClient } = require("@prisma/client");
 const { user } = new PrismaClient();
 
